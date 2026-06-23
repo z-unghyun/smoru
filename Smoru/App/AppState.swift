@@ -14,4 +14,5 @@ final class AppState: ObservableObject {
     @Published var hasCompletedOnboarding: Bool = false
     @Published var healthKitPermissionState: HealthKitPermissionState = .notDetermined
     @Published var healthKitStatusMessage: String = ""
+    @Published var selectedHistoryDate: Date?
 }

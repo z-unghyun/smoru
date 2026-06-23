@@ -25,7 +25,7 @@ struct EntryView: View {
 
             Button("Try without login") {
                 appState.isTrialModeEnabled = true
-                appRouter.route(to: .healthKitIntro)
+                appRouter.route(to: .trialHome)
             }
             .buttonStyle(.bordered)
         }

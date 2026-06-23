@@ -44,4 +44,42 @@ struct DomainSampleData {
         let date = Date(timeIntervalSince1970: 1_700_000_000)
         return engine.stableSeed(for: date) == engine.stableSeed(for: date)
     }
+
+    static func sampleSleepSummary(for date: Date) -> DailySleepSummaryData {
+        let dayIndex = Calendar.current.component(.day, from: date)
+        let variation = Double((dayIndex % 7) - 3)
+
+        return DailySleepSummaryData(
+            date: date,
+            source: .sample,
+            totalSleepMinutes: 430 + (variation * 12),
+            awakeMinutes: max(8, 22 + variation * 3),
+            wakeCount: max(0, 2 + Int(variation)),
+            sleepEfficiency: 0.86 - (variation * 0.01),
+            averageHeartRate: 58 + variation,
+            hrvSDNN: 42 + (variation * 2),
+            respiratoryRate: 14 + (variation * 0.2),
+            stepCount: 420,
+            dataQualityScore: 80
+        )
+    }
+
+    static func sampleFragmentParameters(for date: Date) -> SleepFragmentParameters {
+        let summary = sampleSleepSummary(for: date)
+        let scoreEngine = SleepConditionScoreEngine()
+        let score = scoreEngine.compute(
+            input: SleepScoreInput(
+                summary: summary,
+                targetSleepMinutes: 450,
+                morningPreparationScore: 72
+            )
+        )
+        return SleepFragmentParameterEngine().makeParameters(
+            from: score,
+            totalSleepMinutes: summary.totalSleepMinutes,
+            awakeMinutes: summary.awakeMinutes,
+            wakeCount: summary.wakeCount,
+            targetSleepMinutes: 450
+        )
+    }
 }

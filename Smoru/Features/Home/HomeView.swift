@@ -34,6 +34,12 @@ struct HomeView: View {
                     }
                 }
 
+                PrimaryButton(title: "Start Routine Focus Now") {
+                    appState.focusMode = .basic
+                    appRouter.route(to: .routineFocus)
+                }
+                .padding(.horizontal, 20)
+
                 PrimaryButton(title: "Routine Setup") {
                     appRouter.route(to: .routineTemplateSelection)
                 }

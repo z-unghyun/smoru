@@ -3,6 +3,7 @@ import SwiftData
 
 struct RoutineSetupView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.appDependencies) private var dependencies
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var appRouter: AppRouter
 
@@ -11,6 +12,7 @@ struct RoutineSetupView: View {
 
     @State private var selectedMode: RoutineMode = .basic
     @State private var endTime: Date = .now
+    @State private var notificationStatus: String = ""
 
     private let scheduleEngine = RoutineScheduleEngine()
 
@@ -35,6 +37,24 @@ struct RoutineSetupView: View {
                         .pickerStyle(.segmented)
 
                         schedulePreview(for: template)
+
+                        if !notificationStatus.isEmpty {
+                            Text(notificationStatus)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+
+                        PrimaryButton(title: "Schedule Routine Start Notification") {
+                            Task {
+                                await scheduleNotification(for: template)
+                            }
+                        }
+
+                        PrimaryButton(title: "Start Focus Now") {
+                            appState.focusMode = selectedMode
+                            appState.selectedRoutineTemplateID = template.id
+                            appRouter.route(to: .routineFocus)
+                        }
 
                         Text("Tasks")
                             .font(.headline)
@@ -97,6 +117,18 @@ struct RoutineSetupView: View {
         template.routineEndHour = parts.hour ?? template.routineEndHour
         template.routineEndMinute = parts.minute ?? template.routineEndMinute
         try? modelContext.save()
+    }
+
+    @MainActor
+    private func scheduleNotification(for template: RoutineTemplateModel) async {
+        let plan = scheduleEngine.buildPlan(template: template, mode: selectedMode, for: .now)
+        let startAt = max(plan.startAt, Date().addingTimeInterval(5))
+        let scheduled = await dependencies.notificationManager.scheduleRoutineStartNotification(
+            startAt: startAt,
+            mode: selectedMode,
+            templateID: template.id
+        )
+        notificationStatus = scheduled ? "Routine notification scheduled." : "Notification scheduling failed."
     }
 
     @ViewBuilder

@@ -38,7 +38,23 @@ struct SmoruApp: App {
                 .environmentObject(appState)
                 .environmentObject(appRouter)
                 .environment(\.appDependencies, dependencies)
+                .task {
+                    configureNotificationRoutingOnce()
+                }
         }
         .modelContainer(modelContainer)
+    }
+
+    @MainActor
+    private func configureNotificationRoutingOnce() {
+        dependencies.notificationManager.configureRouteHandler { mode, templateID in
+            DispatchQueue.main.async {
+                appState.focusMode = mode
+                if let templateID {
+                    appState.selectedRoutineTemplateID = templateID
+                }
+                appRouter.route(to: .routineFocus)
+            }
+        }
     }
 }

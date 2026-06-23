@@ -17,4 +17,5 @@ final class AppState: ObservableObject {
     @Published var selectedHistoryDate: Date?
     @Published var selectedRoutineTemplateID: UUID?
     @Published var selectedRoutineTaskID: UUID?
+    @Published var focusMode: RoutineMode = .basic
 }

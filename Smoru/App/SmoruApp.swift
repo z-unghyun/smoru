@@ -1,0 +1,31 @@
+import SwiftUI
+import SwiftData
+
+@main
+struct SmoruApp: App {
+    @StateObject private var appState = AppState()
+    @StateObject private var appRouter = AppRouter()
+    private let dependencies = AppDependencyContainer()
+    private let modelContainer: ModelContainer
+
+    init() {
+        let schema = Schema([StageBootstrapModel.self])
+        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            modelContainer = try ModelContainer(for: schema, configurations: [configuration])
+        } catch {
+            fatalError("Failed to build ModelContainer: \(error)")
+        }
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            SmoruRootView()
+                .environmentObject(appState)
+                .environmentObject(appRouter)
+                .environment(\.appDependencies, dependencies)
+        }
+        .modelContainer(modelContainer)
+    }
+}

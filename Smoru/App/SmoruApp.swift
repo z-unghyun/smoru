@@ -9,7 +9,20 @@ struct SmoruApp: App {
     private let modelContainer: ModelContainer
 
     init() {
-        let schema = Schema([StageBootstrapModel.self])
+        let schema = Schema([
+            UserSettingsModel.self,
+            DailySleepSummaryModel.self,
+            SleepConditionScoreModel.self,
+            SleepFragmentParametersModel.self,
+            RoutineTemplateModel.self,
+            RoutineTaskModel.self,
+            RoutineModeVariantModel.self,
+            RoutineSessionModel.self,
+            RoutineTaskRecordModel.self,
+            NightChecklistItemModel.self,
+            NightChecklistRecordModel.self,
+            ManualConditionInputModel.self
+        ])
         let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {

@@ -6,86 +6,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		964872AD18C44BA2BD9D9091 /* App/AppDependenciesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03306E2583E425CB8C821DD /* App/AppDependenciesEnvironment.swift */; };
-		FBB603E613CC4772B39C887F /* App/AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9E96D0F3F4D809BEB1BFD /* App/AppDependencyContainer.swift */; };
-		D8F64AB427CD4061B05411B2 /* App/AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF14ED0C17244E59F633475 /* App/AppRoute.swift */; };
-		4EA78085D2AB41328FB147A6 /* App/AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB92CBAB2F41AFB9093DE3 /* App/AppRouter.swift */; };
-		564165F0A6E5444DB10553A5 /* App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604C250922E94C5796FEDC6B /* App/AppState.swift */; };
-		359E81A8C6904B3A965DB2E4 /* App/SmoruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177855789AE4580B04A3859 /* App/SmoruApp.swift */; };
-		71E3B53C074548DAB3E9D6F1 /* App/SmoruRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F7ABB89914A68BBDD78CB /* App/SmoruRootView.swift */; };
-		7EE9D1964CD747AA86065156 /* Core/Auth/AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C75916A068475289B3375D /* Core/Auth/AuthManager.swift */; };
-		89A228D0A0CA42AD87AC3373 /* Core/Firebase/FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6170329D6C2542FDA956CD26 /* Core/Firebase/FirebaseClient.swift */; };
-		58FE3C32B195486F883BFDD4 /* Core/HealthKit/HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258A6F2E89447E791E5BFEB /* Core/HealthKit/HealthKitManager.swift */; };
-		84DC2B8E1307471EAFB16E09 /* Core/Logging/AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB5E49BD80484CB8D4F3E4 /* Core/Logging/AppLogger.swift */; };
-		AE9279BF349149C4A031EAC1 /* Core/Notifications/NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB954656F341299A6319DB /* Core/Notifications/NotificationManager.swift */; };
-		8F85B88D3DC74687A7075A13 /* Core/Security/KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5037480E5884AE9B4486D9B /* Core/Security/KeychainStore.swift */; };
-		BC4D1E8DFD544B12B8247B06 /* Data/Models/StageBootstrapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B2AD80324FC9A7A509AA /* Data/Models/StageBootstrapModel.swift */; };
-		22B2443836AE44F8A78D0ACB /* DesignSystem/Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F95C3A184CA686927A96 /* DesignSystem/Colors.swift */; };
-		7307B8F849AF43C7A8360FFA /* DesignSystem/Components/PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D12042B541641699648614E /* DesignSystem/Components/PrimaryButton.swift */; };
-		25A404E8763A4C48BC7BF1E7 /* DesignSystem/SleepFragmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23177EDC088427F96A34832 /* DesignSystem/SleepFragmentView.swift */; };
-		8DB71DC02B9E46B2A93984A1 /* DesignSystem/Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58292336476F4B64B3F6BB8A /* DesignSystem/Typography.swift */; };
-		271A14B673D64FDD8CDD42C3 /* Features/Entry/EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC8863EBD340CAAB753992 /* Features/Entry/EntryView.swift */; };
-		3E56DBA21023447D84767865 /* Features/Entry/TrialHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591CAC48E5B4D0B9855E3D1 /* Features/Entry/TrialHomeView.swift */; };
-		299AE9AD7B8742A7BF2AF1BA /* Features/History/DateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632624CE77464942B2106FAC /* Features/History/DateDetailView.swift */; };
-		66DF652CB1DA480BA14344B5 /* Features/History/HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4683C4B56C4359A014B1AD /* Features/History/HistoryView.swift */; };
-		9155589CCE294865B2862F49 /* Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A1ACA997A74E78863AE6CC /* Features/Home/HomeView.swift */; };
-		59B2AEEB2B4D4CB6A0C41B8F /* Features/Onboarding/HealthKitIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35AF18DA5748B1BFE9BFB5 /* Features/Onboarding/HealthKitIntroView.swift */; };
-		AE41E050D9FA45B4957906CC /* Features/Onboarding/HealthKitPermissionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E527C05E1294F59A10439DE /* Features/Onboarding/HealthKitPermissionStateView.swift */; };
-		062FB6847530414383F5AB75 /* Features/Onboarding/ManualConditionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C352E9B534851B710900E /* Features/Onboarding/ManualConditionInputView.swift */; };
-		D05E93C18EFA4209B6224D16 /* Features/RoutineFocus/RoutineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8990877DCA94E19B315DD2E /* Features/RoutineFocus/RoutineFocusView.swift */; };
-		58804E81DBE64E929633DC80 /* Features/RoutineSetup/RoutineSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914DD551CA24386AE214E33 /* Features/RoutineSetup/RoutineSetupView.swift */; };
-		113D32CC41C44C82827D5540 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07778CA7EC384F31BDE66C49 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */; };
-		B676EC7ABD24441A8C7426C2 /* Features/RoutineSetup/TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749766CC7E214341B9535D97 /* Features/RoutineSetup/TaskEditorView.swift */; };
-		61A6B03783DF47839A79BDBD /* Features/Settings/ErrorReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491191CAE5D7415D8AB39BF7 /* Features/Settings/ErrorReportView.swift */; };
-		B28AC15AEEC34FE2870A64D1 /* Features/Settings/FeatureRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8CC651CF9D43DABC9FEA4A /* Features/Settings/FeatureRequestView.swift */; };
-		2A853B802F4E40428AEB5AF4 /* Features/Settings/PrivacyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EAB40F464149B2AD9ACFCA /* Features/Settings/PrivacyDataView.swift */; };
-		CC6A121734E74D20AF960AF0 /* Features/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DB46F3F9C401A871F8D00 /* Features/Settings/SettingsView.swift */; };
-		63B60D90023F4CA3BDAFCF82 /* Features/Shared/PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FFE390BA7D48638414C261 /* Features/Shared/PlaceholderScreen.swift */; };
-		31F431A2E7DE4371ABD35E64 /* Features/SleepReport/SleepReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6417930714A83825AB062 /* Features/SleepReport/SleepReportView.swift */; };
+		50437C5E9F414F0BAB8D38AC /* App/AppDependenciesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24C63FE734D6A80013928 /* App/AppDependenciesEnvironment.swift */; };
+		E07953F7A0814B81816271E9 /* App/AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4757BBB8859840C480DF05A3 /* App/AppDependencyContainer.swift */; };
+		236387E4D69C4EDFA7EB8DBE /* App/AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CBE189DD94428E9652B6B4 /* App/AppRoute.swift */; };
+		159109549EC94604A77998F3 /* App/AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C233F333004D90A3C77122 /* App/AppRouter.swift */; };
+		9428FE9F81F444D191765A39 /* App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD7EBE9E794B329C528CDF /* App/AppState.swift */; };
+		ECB3FA1F88C94CBC8B355D47 /* App/SmoruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6AD5D3ACE244788B507364 /* App/SmoruApp.swift */; };
+		50B5D915EAF74085AF07DB24 /* App/SmoruRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A8F3415A6445E8A800F72 /* App/SmoruRootView.swift */; };
+		ADB9123EACBC49108DCF3D14 /* Core/Auth/AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C554BC1F4E9987DF7967 /* Core/Auth/AuthManager.swift */; };
+		DAC40706B3C84E3A9802B868 /* Core/Firebase/FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F7844AD984836BA225DE9 /* Core/Firebase/FirebaseClient.swift */; };
+		769FE21A7AC24F4F99B09EFB /* Core/HealthKit/HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A5DF47A82D414C9BADB338 /* Core/HealthKit/HealthKitManager.swift */; };
+		F3A3EF24C5DE4EF883C74C2D /* Core/Logging/AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADE7CB9D5084E2FBB2E0C1F /* Core/Logging/AppLogger.swift */; };
+		42F5F26D60334C15ADC8E76C /* Core/Notifications/NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF600771BE7B4E97B3A4A01D /* Core/Notifications/NotificationManager.swift */; };
+		9E22E7C2CBB94B8191054F90 /* Core/Security/KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7939A581546AA982CC382 /* Core/Security/KeychainStore.swift */; };
+		DD0D16147A9E47BDAEC3FFB8 /* Data/Models/DailySleepSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B2F62DCFFD4D23A541F053 /* Data/Models/DailySleepSummaryModel.swift */; };
+		9713746A13DA4DF7B2922EB2 /* Data/Models/ManualConditionInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDEB7CC9C6945C6B53F4057 /* Data/Models/ManualConditionInputModel.swift */; };
+		4C79335A1FB14DB692CC9297 /* Data/Models/NightChecklistItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DE0CE413643E08BE1F2F6 /* Data/Models/NightChecklistItemModel.swift */; };
+		06F0C049C43F4EFA9B13A35A /* Data/Models/NightChecklistRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADDDC0B2B4409985085126 /* Data/Models/NightChecklistRecordModel.swift */; };
+		FF8CA33D13D54E159AC98155 /* Data/Models/RoutineModeVariantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F75B45D2D0456E8E87B024 /* Data/Models/RoutineModeVariantModel.swift */; };
+		F0F989F9CE7040B8BC656567 /* Data/Models/RoutineSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A54BF0E1A4325B622A340 /* Data/Models/RoutineSessionModel.swift */; };
+		B8A849A6191F417F9CAAFCEB /* Data/Models/RoutineTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1AECCED74462390F0BAD9 /* Data/Models/RoutineTaskModel.swift */; };
+		16242470E14B4D45AEBCB769 /* Data/Models/RoutineTaskRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB275965DA8D4AB1A8FE20E4 /* Data/Models/RoutineTaskRecordModel.swift */; };
+		C8333141177B4527BF9061DC /* Data/Models/RoutineTemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1F35B9532469EB3F2ED0C /* Data/Models/RoutineTemplateModel.swift */; };
+		860EEA4213384D2DB1A9DABB /* Data/Models/SleepConditionScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4736787BE5C49F695C48CD8 /* Data/Models/SleepConditionScoreModel.swift */; };
+		4E64637BC4734DF5BD845E4C /* Data/Models/SleepFragmentParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1260CC726F4B6F91B07EE4 /* Data/Models/SleepFragmentParametersModel.swift */; };
+		2B74CF18A93D4AF8A059C80E /* Data/Models/UserSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6F806E4A44A90BEA074AB /* Data/Models/UserSettingsModel.swift */; };
+		C490D212166041D8AC15A9E6 /* DesignSystem/Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52F84AF7354E8382E2566D /* DesignSystem/Colors.swift */; };
+		104622701A724417A56D457E /* DesignSystem/Components/PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5A6D41F16417EA7B8ECFD /* DesignSystem/Components/PrimaryButton.swift */; };
+		447518682E1B4994A8230FCF /* DesignSystem/SleepFragmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A024C22F7134B74A4B52993 /* DesignSystem/SleepFragmentView.swift */; };
+		BC29741532A64EA8BEF3F0F6 /* DesignSystem/Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F269490A064464F9B2B1F5D /* DesignSystem/Typography.swift */; };
+		8FE7923DA79344E7921FFD2E /* Domain/Routine/RoutineDomainTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EAEC86D0A407FA0448A89 /* Domain/Routine/RoutineDomainTypes.swift */; };
+		430554C3B381402D92B8F0F2 /* Domain/Routine/RoutineModeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96FAAB22DEC4668A7BE31DC /* Domain/Routine/RoutineModeEngine.swift */; };
+		91DC3D465C4643AF94A243AD /* Domain/Routine/RoutineScheduleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9E58AE5CF438BA404F021 /* Domain/Routine/RoutineScheduleEngine.swift */; };
+		3DA673DC85124DB6BB0FE8DA /* Domain/Routine/RoutineSessionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74CF1226E6472AB6DD3FD3 /* Domain/Routine/RoutineSessionEngine.swift */; };
+		8F1A9DBCD3BC4DD7ACB3C8B8 /* Domain/SampleData/DomainSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB3E596B9FC439F8D12BE46 /* Domain/SampleData/DomainSampleData.swift */; };
+		160B50CC2F5A43BE84DEB077 /* Domain/Shared/DomainEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D847F3D7BC9464183E5C96A /* Domain/Shared/DomainEnums.swift */; };
+		427DA148C8444E558ADE9574 /* Domain/Sleep/SleepConditionScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7567E9C1D48A5A96041E5 /* Domain/Sleep/SleepConditionScoreEngine.swift */; };
+		DA69B4A8FCB347328301FEDA /* Domain/Sleep/SleepDomainTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC9155CAE4E3A9021FB7C /* Domain/Sleep/SleepDomainTypes.swift */; };
+		7540A2A0A5EF4DAA98A8EFE1 /* Domain/Sleep/SleepFragmentParameterEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D819246A12A9461EAAECD08F /* Domain/Sleep/SleepFragmentParameterEngine.swift */; };
+		1B94FDD245C04D1BB46E17F8 /* Features/Entry/EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E8CF9BACB42DD9C6D4192 /* Features/Entry/EntryView.swift */; };
+		C49FCEB70D8F4F2A8AB8E86F /* Features/Entry/TrialHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D5E8F3D9448BFA460B885 /* Features/Entry/TrialHomeView.swift */; };
+		356DE33095FD442F8EEA3FDC /* Features/History/DateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A508DA823345A49941EC73 /* Features/History/DateDetailView.swift */; };
+		A23CD30A4B0043F895F2300B /* Features/History/HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B36BC035F54EE4AAF751B5 /* Features/History/HistoryView.swift */; };
+		F3A93AC4C4DA441E8B4442CA /* Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0FC16C510346DFA6FBFAFB /* Features/Home/HomeView.swift */; };
+		12D40EC29F2C44FFBFEA8631 /* Features/Onboarding/HealthKitIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A12BAA4D7743A18C002A6F /* Features/Onboarding/HealthKitIntroView.swift */; };
+		308C8B823ABA411891992827 /* Features/Onboarding/HealthKitPermissionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF96F64E35C465E817377DA /* Features/Onboarding/HealthKitPermissionStateView.swift */; };
+		D112E510E55E4852A9AE06E1 /* Features/Onboarding/ManualConditionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A827857C164F5B8277825F /* Features/Onboarding/ManualConditionInputView.swift */; };
+		6F53A09F028845B8B20959F7 /* Features/RoutineFocus/RoutineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8FE7C3E72F44688E6BC0B3 /* Features/RoutineFocus/RoutineFocusView.swift */; };
+		C0107ECA4586438AAC911A9F /* Features/RoutineSetup/RoutineSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C385847A774237AA77A2E2 /* Features/RoutineSetup/RoutineSetupView.swift */; };
+		31082AB9BCF44601B729169F /* Features/RoutineSetup/RoutineTemplateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBC6F2210A4493B9B16B86 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */; };
+		812160A34C354E2292BC2814 /* Features/RoutineSetup/TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFA84BD978A4CE5B2EA5B30 /* Features/RoutineSetup/TaskEditorView.swift */; };
+		20586D340F22450685DA0D06 /* Features/Settings/ErrorReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE988F7A9349EE83B08C49 /* Features/Settings/ErrorReportView.swift */; };
+		235AF337B4784EB3931CA652 /* Features/Settings/FeatureRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C29A6274A4D64B223CE65 /* Features/Settings/FeatureRequestView.swift */; };
+		97BDEE913B424042961B22F6 /* Features/Settings/PrivacyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1BE152924141BF84EAF93E /* Features/Settings/PrivacyDataView.swift */; };
+		6DEDBE7B29A54ABEA615808B /* Features/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5CE02118D49F5853BC4B6 /* Features/Settings/SettingsView.swift */; };
+		946F24C3DF724262B57D0D1E /* Features/Shared/PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAEEE3312624907AA3D3777 /* Features/Shared/PlaceholderScreen.swift */; };
+		3CFAB138DA8B4774A51490A5 /* Features/SleepReport/SleepReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812CFD5888A415A975BCE8C /* Features/SleepReport/SleepReportView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE3D7C3FB8134E1A93EB8F63 /* Smoru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoru.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03306E2583E425CB8C821DD /* App/AppDependenciesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppDependenciesEnvironment.swift; sourceTree = "<group>"; };
-		29C9E96D0F3F4D809BEB1BFD /* App/AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppDependencyContainer.swift; sourceTree = "<group>"; };
-		2BF14ED0C17244E59F633475 /* App/AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRoute.swift; sourceTree = "<group>"; };
-		AABB92CBAB2F41AFB9093DE3 /* App/AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRouter.swift; sourceTree = "<group>"; };
-		604C250922E94C5796FEDC6B /* App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
-		4177855789AE4580B04A3859 /* App/SmoruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SmoruApp.swift; sourceTree = "<group>"; };
-		A73F7ABB89914A68BBDD78CB /* App/SmoruRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SmoruRootView.swift; sourceTree = "<group>"; };
-		E6C75916A068475289B3375D /* Core/Auth/AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Auth/AuthManager.swift; sourceTree = "<group>"; };
-		6170329D6C2542FDA956CD26 /* Core/Firebase/FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Firebase/FirebaseClient.swift; sourceTree = "<group>"; };
-		C258A6F2E89447E791E5BFEB /* Core/HealthKit/HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/HealthKit/HealthKitManager.swift; sourceTree = "<group>"; };
-		FBDB5E49BD80484CB8D4F3E4 /* Core/Logging/AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Logging/AppLogger.swift; sourceTree = "<group>"; };
-		45DB954656F341299A6319DB /* Core/Notifications/NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Notifications/NotificationManager.swift; sourceTree = "<group>"; };
-		B5037480E5884AE9B4486D9B /* Core/Security/KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Security/KeychainStore.swift; sourceTree = "<group>"; };
-		C033B2AD80324FC9A7A509AA /* Data/Models/StageBootstrapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/StageBootstrapModel.swift; sourceTree = "<group>"; };
-		2964F95C3A184CA686927A96 /* DesignSystem/Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Colors.swift; sourceTree = "<group>"; };
-		4D12042B541641699648614E /* DesignSystem/Components/PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Components/PrimaryButton.swift; sourceTree = "<group>"; };
-		B23177EDC088427F96A34832 /* DesignSystem/SleepFragmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/SleepFragmentView.swift; sourceTree = "<group>"; };
-		58292336476F4B64B3F6BB8A /* DesignSystem/Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Typography.swift; sourceTree = "<group>"; };
-		ACDC8863EBD340CAAB753992 /* Features/Entry/EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Entry/EntryView.swift; sourceTree = "<group>"; };
-		6591CAC48E5B4D0B9855E3D1 /* Features/Entry/TrialHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Entry/TrialHomeView.swift; sourceTree = "<group>"; };
-		632624CE77464942B2106FAC /* Features/History/DateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/History/DateDetailView.swift; sourceTree = "<group>"; };
-		9A4683C4B56C4359A014B1AD /* Features/History/HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/History/HistoryView.swift; sourceTree = "<group>"; };
-		38A1ACA997A74E78863AE6CC /* Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
-		1A35AF18DA5748B1BFE9BFB5 /* Features/Onboarding/HealthKitIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/HealthKitIntroView.swift; sourceTree = "<group>"; };
-		7E527C05E1294F59A10439DE /* Features/Onboarding/HealthKitPermissionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/HealthKitPermissionStateView.swift; sourceTree = "<group>"; };
-		317C352E9B534851B710900E /* Features/Onboarding/ManualConditionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/ManualConditionInputView.swift; sourceTree = "<group>"; };
-		E8990877DCA94E19B315DD2E /* Features/RoutineFocus/RoutineFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineFocus/RoutineFocusView.swift; sourceTree = "<group>"; };
-		8914DD551CA24386AE214E33 /* Features/RoutineSetup/RoutineSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/RoutineSetupView.swift; sourceTree = "<group>"; };
-		07778CA7EC384F31BDE66C49 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/RoutineTemplateSelectionView.swift; sourceTree = "<group>"; };
-		749766CC7E214341B9535D97 /* Features/RoutineSetup/TaskEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/TaskEditorView.swift; sourceTree = "<group>"; };
-		491191CAE5D7415D8AB39BF7 /* Features/Settings/ErrorReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/ErrorReportView.swift; sourceTree = "<group>"; };
-		CC8CC651CF9D43DABC9FEA4A /* Features/Settings/FeatureRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/FeatureRequestView.swift; sourceTree = "<group>"; };
-		90EAB40F464149B2AD9ACFCA /* Features/Settings/PrivacyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/PrivacyDataView.swift; sourceTree = "<group>"; };
-		7D9DB46F3F9C401A871F8D00 /* Features/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
-		12FFE390BA7D48638414C261 /* Features/Shared/PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Shared/PlaceholderScreen.swift; sourceTree = "<group>"; };
-		81A6417930714A83825AB062 /* Features/SleepReport/SleepReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/SleepReport/SleepReportView.swift; sourceTree = "<group>"; };
+		E9062F9CB5A04C7BBDAB5C9F /* Smoru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D24C63FE734D6A80013928 /* App/AppDependenciesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppDependenciesEnvironment.swift; sourceTree = "<group>"; };
+		4757BBB8859840C480DF05A3 /* App/AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppDependencyContainer.swift; sourceTree = "<group>"; };
+		80CBE189DD94428E9652B6B4 /* App/AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRoute.swift; sourceTree = "<group>"; };
+		47C233F333004D90A3C77122 /* App/AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRouter.swift; sourceTree = "<group>"; };
+		39BD7EBE9E794B329C528CDF /* App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
+		0E6AD5D3ACE244788B507364 /* App/SmoruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SmoruApp.swift; sourceTree = "<group>"; };
+		214A8F3415A6445E8A800F72 /* App/SmoruRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SmoruRootView.swift; sourceTree = "<group>"; };
+		0D69C554BC1F4E9987DF7967 /* Core/Auth/AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Auth/AuthManager.swift; sourceTree = "<group>"; };
+		665F7844AD984836BA225DE9 /* Core/Firebase/FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Firebase/FirebaseClient.swift; sourceTree = "<group>"; };
+		96A5DF47A82D414C9BADB338 /* Core/HealthKit/HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/HealthKit/HealthKitManager.swift; sourceTree = "<group>"; };
+		3ADE7CB9D5084E2FBB2E0C1F /* Core/Logging/AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Logging/AppLogger.swift; sourceTree = "<group>"; };
+		AF600771BE7B4E97B3A4A01D /* Core/Notifications/NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Notifications/NotificationManager.swift; sourceTree = "<group>"; };
+		DAA7939A581546AA982CC382 /* Core/Security/KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Security/KeychainStore.swift; sourceTree = "<group>"; };
+		B3B2F62DCFFD4D23A541F053 /* Data/Models/DailySleepSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/DailySleepSummaryModel.swift; sourceTree = "<group>"; };
+		6DDEB7CC9C6945C6B53F4057 /* Data/Models/ManualConditionInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/ManualConditionInputModel.swift; sourceTree = "<group>"; };
+		EF1DE0CE413643E08BE1F2F6 /* Data/Models/NightChecklistItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/NightChecklistItemModel.swift; sourceTree = "<group>"; };
+		C0ADDDC0B2B4409985085126 /* Data/Models/NightChecklistRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/NightChecklistRecordModel.swift; sourceTree = "<group>"; };
+		94F75B45D2D0456E8E87B024 /* Data/Models/RoutineModeVariantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/RoutineModeVariantModel.swift; sourceTree = "<group>"; };
+		4D3A54BF0E1A4325B622A340 /* Data/Models/RoutineSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/RoutineSessionModel.swift; sourceTree = "<group>"; };
+		19F1AECCED74462390F0BAD9 /* Data/Models/RoutineTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/RoutineTaskModel.swift; sourceTree = "<group>"; };
+		DB275965DA8D4AB1A8FE20E4 /* Data/Models/RoutineTaskRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/RoutineTaskRecordModel.swift; sourceTree = "<group>"; };
+		86D1F35B9532469EB3F2ED0C /* Data/Models/RoutineTemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/RoutineTemplateModel.swift; sourceTree = "<group>"; };
+		F4736787BE5C49F695C48CD8 /* Data/Models/SleepConditionScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/SleepConditionScoreModel.swift; sourceTree = "<group>"; };
+		BB1260CC726F4B6F91B07EE4 /* Data/Models/SleepFragmentParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/SleepFragmentParametersModel.swift; sourceTree = "<group>"; };
+		12E6F806E4A44A90BEA074AB /* Data/Models/UserSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/Models/UserSettingsModel.swift; sourceTree = "<group>"; };
+		EF52F84AF7354E8382E2566D /* DesignSystem/Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Colors.swift; sourceTree = "<group>"; };
+		ABA5A6D41F16417EA7B8ECFD /* DesignSystem/Components/PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Components/PrimaryButton.swift; sourceTree = "<group>"; };
+		6A024C22F7134B74A4B52993 /* DesignSystem/SleepFragmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/SleepFragmentView.swift; sourceTree = "<group>"; };
+		3F269490A064464F9B2B1F5D /* DesignSystem/Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Typography.swift; sourceTree = "<group>"; };
+		A92EAEC86D0A407FA0448A89 /* Domain/Routine/RoutineDomainTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Routine/RoutineDomainTypes.swift; sourceTree = "<group>"; };
+		F96FAAB22DEC4668A7BE31DC /* Domain/Routine/RoutineModeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Routine/RoutineModeEngine.swift; sourceTree = "<group>"; };
+		F4F9E58AE5CF438BA404F021 /* Domain/Routine/RoutineScheduleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Routine/RoutineScheduleEngine.swift; sourceTree = "<group>"; };
+		DC74CF1226E6472AB6DD3FD3 /* Domain/Routine/RoutineSessionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Routine/RoutineSessionEngine.swift; sourceTree = "<group>"; };
+		EAB3E596B9FC439F8D12BE46 /* Domain/SampleData/DomainSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/SampleData/DomainSampleData.swift; sourceTree = "<group>"; };
+		4D847F3D7BC9464183E5C96A /* Domain/Shared/DomainEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Shared/DomainEnums.swift; sourceTree = "<group>"; };
+		3FA7567E9C1D48A5A96041E5 /* Domain/Sleep/SleepConditionScoreEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Sleep/SleepConditionScoreEngine.swift; sourceTree = "<group>"; };
+		4EEFC9155CAE4E3A9021FB7C /* Domain/Sleep/SleepDomainTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Sleep/SleepDomainTypes.swift; sourceTree = "<group>"; };
+		D819246A12A9461EAAECD08F /* Domain/Sleep/SleepFragmentParameterEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Sleep/SleepFragmentParameterEngine.swift; sourceTree = "<group>"; };
+		701E8CF9BACB42DD9C6D4192 /* Features/Entry/EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Entry/EntryView.swift; sourceTree = "<group>"; };
+		5E7D5E8F3D9448BFA460B885 /* Features/Entry/TrialHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Entry/TrialHomeView.swift; sourceTree = "<group>"; };
+		C2A508DA823345A49941EC73 /* Features/History/DateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/History/DateDetailView.swift; sourceTree = "<group>"; };
+		33B36BC035F54EE4AAF751B5 /* Features/History/HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/History/HistoryView.swift; sourceTree = "<group>"; };
+		7F0FC16C510346DFA6FBFAFB /* Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		11A12BAA4D7743A18C002A6F /* Features/Onboarding/HealthKitIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/HealthKitIntroView.swift; sourceTree = "<group>"; };
+		1AF96F64E35C465E817377DA /* Features/Onboarding/HealthKitPermissionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/HealthKitPermissionStateView.swift; sourceTree = "<group>"; };
+		88A827857C164F5B8277825F /* Features/Onboarding/ManualConditionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/ManualConditionInputView.swift; sourceTree = "<group>"; };
+		1D8FE7C3E72F44688E6BC0B3 /* Features/RoutineFocus/RoutineFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineFocus/RoutineFocusView.swift; sourceTree = "<group>"; };
+		27C385847A774237AA77A2E2 /* Features/RoutineSetup/RoutineSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/RoutineSetupView.swift; sourceTree = "<group>"; };
+		C5CBC6F2210A4493B9B16B86 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/RoutineTemplateSelectionView.swift; sourceTree = "<group>"; };
+		9EFA84BD978A4CE5B2EA5B30 /* Features/RoutineSetup/TaskEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/RoutineSetup/TaskEditorView.swift; sourceTree = "<group>"; };
+		9ACE988F7A9349EE83B08C49 /* Features/Settings/ErrorReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/ErrorReportView.swift; sourceTree = "<group>"; };
+		3C2C29A6274A4D64B223CE65 /* Features/Settings/FeatureRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/FeatureRequestView.swift; sourceTree = "<group>"; };
+		FB1BE152924141BF84EAF93E /* Features/Settings/PrivacyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/PrivacyDataView.swift; sourceTree = "<group>"; };
+		70F5CE02118D49F5853BC4B6 /* Features/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		3DAEEE3312624907AA3D3777 /* Features/Shared/PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Shared/PlaceholderScreen.swift; sourceTree = "<group>"; };
+		9812CFD5888A415A975BCE8C /* Features/SleepReport/SleepReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/SleepReport/SleepReportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C834F59EC1DE4DAC8705E2F5 /* Frameworks */ = {
+		1E802BC04C8749F18C858FD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,61 +135,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		586A4A82D76A4BDE9838DAD2 = {
+		09BA10054C5F4C6BBBE30B57 = {
 			isa = PBXGroup;
 			children = (
-				BF76E131ABAE4FEB9E2987D5 /* Smoru */,
-				E687EF118ADF425F9A8FEC82 /* Products */,
+				8D4BC0D8CCBF4DD3BA1AC2BA /* Smoru */,
+				540EBFED964149C39BE1BDF4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BF76E131ABAE4FEB9E2987D5 /* Smoru */ = {
+		8D4BC0D8CCBF4DD3BA1AC2BA /* Smoru */ = {
 			isa = PBXGroup;
 			children = (
-				A03306E2583E425CB8C821DD /* App/AppDependenciesEnvironment.swift */,
-				29C9E96D0F3F4D809BEB1BFD /* App/AppDependencyContainer.swift */,
-				2BF14ED0C17244E59F633475 /* App/AppRoute.swift */,
-				AABB92CBAB2F41AFB9093DE3 /* App/AppRouter.swift */,
-				604C250922E94C5796FEDC6B /* App/AppState.swift */,
-				4177855789AE4580B04A3859 /* App/SmoruApp.swift */,
-				A73F7ABB89914A68BBDD78CB /* App/SmoruRootView.swift */,
-				E6C75916A068475289B3375D /* Core/Auth/AuthManager.swift */,
-				6170329D6C2542FDA956CD26 /* Core/Firebase/FirebaseClient.swift */,
-				C258A6F2E89447E791E5BFEB /* Core/HealthKit/HealthKitManager.swift */,
-				FBDB5E49BD80484CB8D4F3E4 /* Core/Logging/AppLogger.swift */,
-				45DB954656F341299A6319DB /* Core/Notifications/NotificationManager.swift */,
-				B5037480E5884AE9B4486D9B /* Core/Security/KeychainStore.swift */,
-				C033B2AD80324FC9A7A509AA /* Data/Models/StageBootstrapModel.swift */,
-				2964F95C3A184CA686927A96 /* DesignSystem/Colors.swift */,
-				4D12042B541641699648614E /* DesignSystem/Components/PrimaryButton.swift */,
-				B23177EDC088427F96A34832 /* DesignSystem/SleepFragmentView.swift */,
-				58292336476F4B64B3F6BB8A /* DesignSystem/Typography.swift */,
-				ACDC8863EBD340CAAB753992 /* Features/Entry/EntryView.swift */,
-				6591CAC48E5B4D0B9855E3D1 /* Features/Entry/TrialHomeView.swift */,
-				632624CE77464942B2106FAC /* Features/History/DateDetailView.swift */,
-				9A4683C4B56C4359A014B1AD /* Features/History/HistoryView.swift */,
-				38A1ACA997A74E78863AE6CC /* Features/Home/HomeView.swift */,
-				1A35AF18DA5748B1BFE9BFB5 /* Features/Onboarding/HealthKitIntroView.swift */,
-				7E527C05E1294F59A10439DE /* Features/Onboarding/HealthKitPermissionStateView.swift */,
-				317C352E9B534851B710900E /* Features/Onboarding/ManualConditionInputView.swift */,
-				E8990877DCA94E19B315DD2E /* Features/RoutineFocus/RoutineFocusView.swift */,
-				8914DD551CA24386AE214E33 /* Features/RoutineSetup/RoutineSetupView.swift */,
-				07778CA7EC384F31BDE66C49 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */,
-				749766CC7E214341B9535D97 /* Features/RoutineSetup/TaskEditorView.swift */,
-				491191CAE5D7415D8AB39BF7 /* Features/Settings/ErrorReportView.swift */,
-				CC8CC651CF9D43DABC9FEA4A /* Features/Settings/FeatureRequestView.swift */,
-				90EAB40F464149B2AD9ACFCA /* Features/Settings/PrivacyDataView.swift */,
-				7D9DB46F3F9C401A871F8D00 /* Features/Settings/SettingsView.swift */,
-				12FFE390BA7D48638414C261 /* Features/Shared/PlaceholderScreen.swift */,
-				81A6417930714A83825AB062 /* Features/SleepReport/SleepReportView.swift */,
+				E5D24C63FE734D6A80013928 /* App/AppDependenciesEnvironment.swift */,
+				4757BBB8859840C480DF05A3 /* App/AppDependencyContainer.swift */,
+				80CBE189DD94428E9652B6B4 /* App/AppRoute.swift */,
+				47C233F333004D90A3C77122 /* App/AppRouter.swift */,
+				39BD7EBE9E794B329C528CDF /* App/AppState.swift */,
+				0E6AD5D3ACE244788B507364 /* App/SmoruApp.swift */,
+				214A8F3415A6445E8A800F72 /* App/SmoruRootView.swift */,
+				0D69C554BC1F4E9987DF7967 /* Core/Auth/AuthManager.swift */,
+				665F7844AD984836BA225DE9 /* Core/Firebase/FirebaseClient.swift */,
+				96A5DF47A82D414C9BADB338 /* Core/HealthKit/HealthKitManager.swift */,
+				3ADE7CB9D5084E2FBB2E0C1F /* Core/Logging/AppLogger.swift */,
+				AF600771BE7B4E97B3A4A01D /* Core/Notifications/NotificationManager.swift */,
+				DAA7939A581546AA982CC382 /* Core/Security/KeychainStore.swift */,
+				B3B2F62DCFFD4D23A541F053 /* Data/Models/DailySleepSummaryModel.swift */,
+				6DDEB7CC9C6945C6B53F4057 /* Data/Models/ManualConditionInputModel.swift */,
+				EF1DE0CE413643E08BE1F2F6 /* Data/Models/NightChecklistItemModel.swift */,
+				C0ADDDC0B2B4409985085126 /* Data/Models/NightChecklistRecordModel.swift */,
+				94F75B45D2D0456E8E87B024 /* Data/Models/RoutineModeVariantModel.swift */,
+				4D3A54BF0E1A4325B622A340 /* Data/Models/RoutineSessionModel.swift */,
+				19F1AECCED74462390F0BAD9 /* Data/Models/RoutineTaskModel.swift */,
+				DB275965DA8D4AB1A8FE20E4 /* Data/Models/RoutineTaskRecordModel.swift */,
+				86D1F35B9532469EB3F2ED0C /* Data/Models/RoutineTemplateModel.swift */,
+				F4736787BE5C49F695C48CD8 /* Data/Models/SleepConditionScoreModel.swift */,
+				BB1260CC726F4B6F91B07EE4 /* Data/Models/SleepFragmentParametersModel.swift */,
+				12E6F806E4A44A90BEA074AB /* Data/Models/UserSettingsModel.swift */,
+				EF52F84AF7354E8382E2566D /* DesignSystem/Colors.swift */,
+				ABA5A6D41F16417EA7B8ECFD /* DesignSystem/Components/PrimaryButton.swift */,
+				6A024C22F7134B74A4B52993 /* DesignSystem/SleepFragmentView.swift */,
+				3F269490A064464F9B2B1F5D /* DesignSystem/Typography.swift */,
+				A92EAEC86D0A407FA0448A89 /* Domain/Routine/RoutineDomainTypes.swift */,
+				F96FAAB22DEC4668A7BE31DC /* Domain/Routine/RoutineModeEngine.swift */,
+				F4F9E58AE5CF438BA404F021 /* Domain/Routine/RoutineScheduleEngine.swift */,
+				DC74CF1226E6472AB6DD3FD3 /* Domain/Routine/RoutineSessionEngine.swift */,
+				EAB3E596B9FC439F8D12BE46 /* Domain/SampleData/DomainSampleData.swift */,
+				4D847F3D7BC9464183E5C96A /* Domain/Shared/DomainEnums.swift */,
+				3FA7567E9C1D48A5A96041E5 /* Domain/Sleep/SleepConditionScoreEngine.swift */,
+				4EEFC9155CAE4E3A9021FB7C /* Domain/Sleep/SleepDomainTypes.swift */,
+				D819246A12A9461EAAECD08F /* Domain/Sleep/SleepFragmentParameterEngine.swift */,
+				701E8CF9BACB42DD9C6D4192 /* Features/Entry/EntryView.swift */,
+				5E7D5E8F3D9448BFA460B885 /* Features/Entry/TrialHomeView.swift */,
+				C2A508DA823345A49941EC73 /* Features/History/DateDetailView.swift */,
+				33B36BC035F54EE4AAF751B5 /* Features/History/HistoryView.swift */,
+				7F0FC16C510346DFA6FBFAFB /* Features/Home/HomeView.swift */,
+				11A12BAA4D7743A18C002A6F /* Features/Onboarding/HealthKitIntroView.swift */,
+				1AF96F64E35C465E817377DA /* Features/Onboarding/HealthKitPermissionStateView.swift */,
+				88A827857C164F5B8277825F /* Features/Onboarding/ManualConditionInputView.swift */,
+				1D8FE7C3E72F44688E6BC0B3 /* Features/RoutineFocus/RoutineFocusView.swift */,
+				27C385847A774237AA77A2E2 /* Features/RoutineSetup/RoutineSetupView.swift */,
+				C5CBC6F2210A4493B9B16B86 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift */,
+				9EFA84BD978A4CE5B2EA5B30 /* Features/RoutineSetup/TaskEditorView.swift */,
+				9ACE988F7A9349EE83B08C49 /* Features/Settings/ErrorReportView.swift */,
+				3C2C29A6274A4D64B223CE65 /* Features/Settings/FeatureRequestView.swift */,
+				FB1BE152924141BF84EAF93E /* Features/Settings/PrivacyDataView.swift */,
+				70F5CE02118D49F5853BC4B6 /* Features/Settings/SettingsView.swift */,
+				3DAEEE3312624907AA3D3777 /* Features/Shared/PlaceholderScreen.swift */,
+				9812CFD5888A415A975BCE8C /* Features/SleepReport/SleepReportView.swift */,
 			);
 			path = Smoru;
 			sourceTree = "<group>";
 		};
-		E687EF118ADF425F9A8FEC82 /* Products */ = {
+		540EBFED964149C39BE1BDF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE3D7C3FB8134E1A93EB8F63 /* Smoru.app */,
+				E9062F9CB5A04C7BBDAB5C9F /* Smoru.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,13 +217,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A4F5F22FAE047A987F0F8E2 /* Smoru */ = {
+		A5A675689B2A469193890124 /* Smoru */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D193F1506D5743EAAFD186E5 /* Build configuration list for PBXNativeTarget \"Smoru\" */;
+			buildConfigurationList = 6D35A43011D041CA8AF7CCC5 /* Build configuration list for PBXNativeTarget \"Smoru\" */;
 			buildPhases = (
-				EAD62B18A1F44F41B20C72A6 /* Sources */,
-				C834F59EC1DE4DAC8705E2F5 /* Frameworks */,
-				B4655C909E8D4FF5AD3F49CF /* Resources */,
+				B45AFEC6A3664FA1AB07A9B1 /* Sources */,
+				1E802BC04C8749F18C858FD8 /* Frameworks */,
+				71D9FD94190F40479BE25F87 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -171,41 +231,41 @@
 			);
 			name = Smoru;
 			productName = Smoru;
-			productReference = CE3D7C3FB8134E1A93EB8F63 /* Smoru.app */;
+			productReference = E9062F9CB5A04C7BBDAB5C9F /* Smoru.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC94E4E0575C4665B1308620 /* Project object */ = {
+		8753B4D728B54184BE41BFFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					0A4F5F22FAE047A987F0F8E2 = {
+					A5A675689B2A469193890124 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = CA1E25EB632F4400A8986F6D /* Build configuration list for PBXProject \"Smoru\" */;
+			buildConfigurationList = 61E63EC8E3034EC68D899A8B /* Build configuration list for PBXProject \"Smoru\" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (en, Base);
-			mainGroup = 586A4A82D76A4BDE9838DAD2;
-			productRefGroup = E687EF118ADF425F9A8FEC82 /* Products */;
+			mainGroup = 09BA10054C5F4C6BBBE30B57;
+			productRefGroup = 540EBFED964149C39BE1BDF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A4F5F22FAE047A987F0F8E2 /* Smoru */,
+				A5A675689B2A469193890124 /* Smoru */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B4655C909E8D4FF5AD3F49CF /* Resources */ = {
+		71D9FD94190F40479BE25F87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,53 +275,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EAD62B18A1F44F41B20C72A6 /* Sources */ = {
+		B45AFEC6A3664FA1AB07A9B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964872AD18C44BA2BD9D9091 /* App/AppDependenciesEnvironment.swift in Sources */,
-				FBB603E613CC4772B39C887F /* App/AppDependencyContainer.swift in Sources */,
-				D8F64AB427CD4061B05411B2 /* App/AppRoute.swift in Sources */,
-				4EA78085D2AB41328FB147A6 /* App/AppRouter.swift in Sources */,
-				564165F0A6E5444DB10553A5 /* App/AppState.swift in Sources */,
-				359E81A8C6904B3A965DB2E4 /* App/SmoruApp.swift in Sources */,
-				71E3B53C074548DAB3E9D6F1 /* App/SmoruRootView.swift in Sources */,
-				7EE9D1964CD747AA86065156 /* Core/Auth/AuthManager.swift in Sources */,
-				89A228D0A0CA42AD87AC3373 /* Core/Firebase/FirebaseClient.swift in Sources */,
-				58FE3C32B195486F883BFDD4 /* Core/HealthKit/HealthKitManager.swift in Sources */,
-				84DC2B8E1307471EAFB16E09 /* Core/Logging/AppLogger.swift in Sources */,
-				AE9279BF349149C4A031EAC1 /* Core/Notifications/NotificationManager.swift in Sources */,
-				8F85B88D3DC74687A7075A13 /* Core/Security/KeychainStore.swift in Sources */,
-				BC4D1E8DFD544B12B8247B06 /* Data/Models/StageBootstrapModel.swift in Sources */,
-				22B2443836AE44F8A78D0ACB /* DesignSystem/Colors.swift in Sources */,
-				7307B8F849AF43C7A8360FFA /* DesignSystem/Components/PrimaryButton.swift in Sources */,
-				25A404E8763A4C48BC7BF1E7 /* DesignSystem/SleepFragmentView.swift in Sources */,
-				8DB71DC02B9E46B2A93984A1 /* DesignSystem/Typography.swift in Sources */,
-				271A14B673D64FDD8CDD42C3 /* Features/Entry/EntryView.swift in Sources */,
-				3E56DBA21023447D84767865 /* Features/Entry/TrialHomeView.swift in Sources */,
-				299AE9AD7B8742A7BF2AF1BA /* Features/History/DateDetailView.swift in Sources */,
-				66DF652CB1DA480BA14344B5 /* Features/History/HistoryView.swift in Sources */,
-				9155589CCE294865B2862F49 /* Features/Home/HomeView.swift in Sources */,
-				59B2AEEB2B4D4CB6A0C41B8F /* Features/Onboarding/HealthKitIntroView.swift in Sources */,
-				AE41E050D9FA45B4957906CC /* Features/Onboarding/HealthKitPermissionStateView.swift in Sources */,
-				062FB6847530414383F5AB75 /* Features/Onboarding/ManualConditionInputView.swift in Sources */,
-				D05E93C18EFA4209B6224D16 /* Features/RoutineFocus/RoutineFocusView.swift in Sources */,
-				58804E81DBE64E929633DC80 /* Features/RoutineSetup/RoutineSetupView.swift in Sources */,
-				113D32CC41C44C82827D5540 /* Features/RoutineSetup/RoutineTemplateSelectionView.swift in Sources */,
-				B676EC7ABD24441A8C7426C2 /* Features/RoutineSetup/TaskEditorView.swift in Sources */,
-				61A6B03783DF47839A79BDBD /* Features/Settings/ErrorReportView.swift in Sources */,
-				B28AC15AEEC34FE2870A64D1 /* Features/Settings/FeatureRequestView.swift in Sources */,
-				2A853B802F4E40428AEB5AF4 /* Features/Settings/PrivacyDataView.swift in Sources */,
-				CC6A121734E74D20AF960AF0 /* Features/Settings/SettingsView.swift in Sources */,
-				63B60D90023F4CA3BDAFCF82 /* Features/Shared/PlaceholderScreen.swift in Sources */,
-				31F431A2E7DE4371ABD35E64 /* Features/SleepReport/SleepReportView.swift in Sources */,
+				50437C5E9F414F0BAB8D38AC /* App/AppDependenciesEnvironment.swift in Sources */,
+				E07953F7A0814B81816271E9 /* App/AppDependencyContainer.swift in Sources */,
+				236387E4D69C4EDFA7EB8DBE /* App/AppRoute.swift in Sources */,
+				159109549EC94604A77998F3 /* App/AppRouter.swift in Sources */,
+				9428FE9F81F444D191765A39 /* App/AppState.swift in Sources */,
+				ECB3FA1F88C94CBC8B355D47 /* App/SmoruApp.swift in Sources */,
+				50B5D915EAF74085AF07DB24 /* App/SmoruRootView.swift in Sources */,
+				ADB9123EACBC49108DCF3D14 /* Core/Auth/AuthManager.swift in Sources */,
+				DAC40706B3C84E3A9802B868 /* Core/Firebase/FirebaseClient.swift in Sources */,
+				769FE21A7AC24F4F99B09EFB /* Core/HealthKit/HealthKitManager.swift in Sources */,
+				F3A3EF24C5DE4EF883C74C2D /* Core/Logging/AppLogger.swift in Sources */,
+				42F5F26D60334C15ADC8E76C /* Core/Notifications/NotificationManager.swift in Sources */,
+				9E22E7C2CBB94B8191054F90 /* Core/Security/KeychainStore.swift in Sources */,
+				DD0D16147A9E47BDAEC3FFB8 /* Data/Models/DailySleepSummaryModel.swift in Sources */,
+				9713746A13DA4DF7B2922EB2 /* Data/Models/ManualConditionInputModel.swift in Sources */,
+				4C79335A1FB14DB692CC9297 /* Data/Models/NightChecklistItemModel.swift in Sources */,
+				06F0C049C43F4EFA9B13A35A /* Data/Models/NightChecklistRecordModel.swift in Sources */,
+				FF8CA33D13D54E159AC98155 /* Data/Models/RoutineModeVariantModel.swift in Sources */,
+				F0F989F9CE7040B8BC656567 /* Data/Models/RoutineSessionModel.swift in Sources */,
+				B8A849A6191F417F9CAAFCEB /* Data/Models/RoutineTaskModel.swift in Sources */,
+				16242470E14B4D45AEBCB769 /* Data/Models/RoutineTaskRecordModel.swift in Sources */,
+				C8333141177B4527BF9061DC /* Data/Models/RoutineTemplateModel.swift in Sources */,
+				860EEA4213384D2DB1A9DABB /* Data/Models/SleepConditionScoreModel.swift in Sources */,
+				4E64637BC4734DF5BD845E4C /* Data/Models/SleepFragmentParametersModel.swift in Sources */,
+				2B74CF18A93D4AF8A059C80E /* Data/Models/UserSettingsModel.swift in Sources */,
+				C490D212166041D8AC15A9E6 /* DesignSystem/Colors.swift in Sources */,
+				104622701A724417A56D457E /* DesignSystem/Components/PrimaryButton.swift in Sources */,
+				447518682E1B4994A8230FCF /* DesignSystem/SleepFragmentView.swift in Sources */,
+				BC29741532A64EA8BEF3F0F6 /* DesignSystem/Typography.swift in Sources */,
+				8FE7923DA79344E7921FFD2E /* Domain/Routine/RoutineDomainTypes.swift in Sources */,
+				430554C3B381402D92B8F0F2 /* Domain/Routine/RoutineModeEngine.swift in Sources */,
+				91DC3D465C4643AF94A243AD /* Domain/Routine/RoutineScheduleEngine.swift in Sources */,
+				3DA673DC85124DB6BB0FE8DA /* Domain/Routine/RoutineSessionEngine.swift in Sources */,
+				8F1A9DBCD3BC4DD7ACB3C8B8 /* Domain/SampleData/DomainSampleData.swift in Sources */,
+				160B50CC2F5A43BE84DEB077 /* Domain/Shared/DomainEnums.swift in Sources */,
+				427DA148C8444E558ADE9574 /* Domain/Sleep/SleepConditionScoreEngine.swift in Sources */,
+				DA69B4A8FCB347328301FEDA /* Domain/Sleep/SleepDomainTypes.swift in Sources */,
+				7540A2A0A5EF4DAA98A8EFE1 /* Domain/Sleep/SleepFragmentParameterEngine.swift in Sources */,
+				1B94FDD245C04D1BB46E17F8 /* Features/Entry/EntryView.swift in Sources */,
+				C49FCEB70D8F4F2A8AB8E86F /* Features/Entry/TrialHomeView.swift in Sources */,
+				356DE33095FD442F8EEA3FDC /* Features/History/DateDetailView.swift in Sources */,
+				A23CD30A4B0043F895F2300B /* Features/History/HistoryView.swift in Sources */,
+				F3A93AC4C4DA441E8B4442CA /* Features/Home/HomeView.swift in Sources */,
+				12D40EC29F2C44FFBFEA8631 /* Features/Onboarding/HealthKitIntroView.swift in Sources */,
+				308C8B823ABA411891992827 /* Features/Onboarding/HealthKitPermissionStateView.swift in Sources */,
+				D112E510E55E4852A9AE06E1 /* Features/Onboarding/ManualConditionInputView.swift in Sources */,
+				6F53A09F028845B8B20959F7 /* Features/RoutineFocus/RoutineFocusView.swift in Sources */,
+				C0107ECA4586438AAC911A9F /* Features/RoutineSetup/RoutineSetupView.swift in Sources */,
+				31082AB9BCF44601B729169F /* Features/RoutineSetup/RoutineTemplateSelectionView.swift in Sources */,
+				812160A34C354E2292BC2814 /* Features/RoutineSetup/TaskEditorView.swift in Sources */,
+				20586D340F22450685DA0D06 /* Features/Settings/ErrorReportView.swift in Sources */,
+				235AF337B4784EB3931CA652 /* Features/Settings/FeatureRequestView.swift in Sources */,
+				97BDEE913B424042961B22F6 /* Features/Settings/PrivacyDataView.swift in Sources */,
+				6DEDBE7B29A54ABEA615808B /* Features/Settings/SettingsView.swift in Sources */,
+				946F24C3DF724262B57D0D1E /* Features/Shared/PlaceholderScreen.swift in Sources */,
+				3CFAB138DA8B4774A51490A5 /* Features/SleepReport/SleepReportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7DBA13B5D25B43CCB580C54B /* Debug */ = {
+		9A61E73DD67D40D08CEE98BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,7 +355,7 @@
 			};
 			name = Debug;
 		};
-		39AFDF17D63245DB97019FAF /* Release */ = {
+		86CA9CA9AEEE4263A484AB3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,7 +368,7 @@
 			};
 			name = Release;
 		};
-		B596F08740874E4593C826CE /* Debug */ = {
+		6A0BD3F923424C4C8AB33B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		F3B728E562AA4564AD3756F1 /* Release */ = {
+		7C25F5BBE36C430596D7AB81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,25 +415,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA1E25EB632F4400A8986F6D /* Build configuration list for PBXProject \"Smoru\" */ = {
+		61E63EC8E3034EC68D899A8B /* Build configuration list for PBXProject \"Smoru\" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DBA13B5D25B43CCB580C54B /* Debug */,
-				39AFDF17D63245DB97019FAF /* Release */,
+				9A61E73DD67D40D08CEE98BC /* Debug */,
+				86CA9CA9AEEE4263A484AB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D193F1506D5743EAAFD186E5 /* Build configuration list for PBXNativeTarget \"Smoru\" */ = {
+		6D35A43011D041CA8AF7CCC5 /* Build configuration list for PBXNativeTarget \"Smoru\" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B596F08740874E4593C826CE /* Debug */,
-				F3B728E562AA4564AD3756F1 /* Release */,
+				6A0BD3F923424C4C8AB33B61 /* Debug */,
+				7C25F5BBE36C430596D7AB81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC94E4E0575C4665B1308620 /* Project object */;
+	rootObject = 8753B4D728B54184BE41BFFA /* Project object */;
 }

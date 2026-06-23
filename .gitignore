@@ -1,0 +1,7 @@
+# Local secrets and non-example configs
+GoogleService-Info.plist
+Smoru/Core/Firebase/FirebaseConfig.swift
+
+# Xcode user state
+*.xcuserstate
+xcuserdata/

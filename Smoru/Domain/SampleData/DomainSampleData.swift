@@ -82,4 +82,58 @@ struct DomainSampleData {
             targetSleepMinutes: 450
         )
     }
+
+    static func sampleRoutineTemplates() -> [RoutineTemplateModel] {
+        [
+            makeMorningTypeTemplate(name: "Light Morning"),
+            makeMorningTypeTemplate(name: "Workout Morning"),
+            makeMorningTypeTemplate(name: "Study Morning")
+        ]
+    }
+
+    private static func makeMorningTypeTemplate(name: String) -> RoutineTemplateModel {
+        let template = RoutineTemplateModel(
+            name: name,
+            routineEndHour: 8,
+            routineEndMinute: 30,
+            voiceGuideEnabled: true,
+            notificationEnabled: true
+        )
+
+        let wakeTask = RoutineTaskModel(orderIndex: 0, title: "Wake and Hydrate", type: .alarmLike, durationSeconds: 300, isEssential: true)
+        let moveTask = RoutineTaskModel(orderIndex: 1, title: "Move Body", type: .multiTimer, durationSeconds: 900)
+        let appTask = RoutineTaskModel(orderIndex: 2, title: "Open Calendar App", type: .appOpen, durationSeconds: 180, launchURLString: "calshow://")
+        let linkTask = RoutineTaskModel(orderIndex: 3, title: "Read Quick Brief", type: .linkOpen, durationSeconds: 240, launchURLString: "https://news.google.com")
+
+        wakeTask.modeVariants = [
+            RoutineModeVariantModel(mode: .expanded, action: .replace, replacementTitle: "Wake and Hydrate Plus", replacementDurationSeconds: 420),
+            RoutineModeVariantModel(mode: .basic, action: .keep),
+            RoutineModeVariantModel(mode: .reduced, action: .keep)
+        ]
+
+        moveTask.modeVariants = [
+            RoutineModeVariantModel(mode: .expanded, action: .replace, replacementTitle: "Move Body Plus", replacementDurationSeconds: 1200),
+            RoutineModeVariantModel(mode: .basic, action: .keep),
+            RoutineModeVariantModel(mode: .reduced, action: .replace, replacementTitle: "Move Essentials", replacementDurationSeconds: 360)
+        ]
+
+        appTask.modeVariants = [
+            RoutineModeVariantModel(mode: .expanded, action: .keep),
+            RoutineModeVariantModel(mode: .basic, action: .keep),
+            RoutineModeVariantModel(mode: .reduced, action: .skip)
+        ]
+
+        linkTask.modeVariants = [
+            RoutineModeVariantModel(mode: .expanded, action: .keep),
+            RoutineModeVariantModel(mode: .basic, action: .keep),
+            RoutineModeVariantModel(mode: .reduced, action: .skip)
+        ]
+
+        template.tasks = [wakeTask, moveTask, appTask, linkTask]
+        for task in template.tasks {
+            task.template = template
+        }
+
+        return template
+    }
 }

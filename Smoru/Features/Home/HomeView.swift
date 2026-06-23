@@ -3,6 +3,7 @@ import SwiftData
 
 struct HomeView: View {
     @EnvironmentObject private var appState: AppState
+    @EnvironmentObject private var appRouter: AppRouter
 
     @Query(sort: [SortDescriptor(\DailySleepSummaryModel.date, order: .reverse)])
     private var summaries: [DailySleepSummaryModel]
@@ -32,6 +33,16 @@ struct HomeView: View {
                             .foregroundStyle(.secondary)
                     }
                 }
+
+                PrimaryButton(title: "Routine Setup") {
+                    appRouter.route(to: .routineTemplateSelection)
+                }
+                .padding(.horizontal, 20)
+
+                PrimaryButton(title: "Open History") {
+                    appRouter.route(to: .history)
+                }
+                .padding(.horizontal, 20)
 
                 PlaceholderScreen(
                     title: "Home",

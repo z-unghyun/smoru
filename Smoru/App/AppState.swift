@@ -15,4 +15,6 @@ final class AppState: ObservableObject {
     @Published var healthKitPermissionState: HealthKitPermissionState = .notDetermined
     @Published var healthKitStatusMessage: String = ""
     @Published var selectedHistoryDate: Date?
+    @Published var selectedRoutineTemplateID: UUID?
+    @Published var selectedRoutineTaskID: UUID?
 }
